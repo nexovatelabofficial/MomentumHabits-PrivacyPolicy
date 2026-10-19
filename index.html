@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Momentum Habits</title>
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-hover: #4338CA;
+            --bg-color: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --text-main: #0F172A;
+            --text-muted: #64748B;
+            --border-color: #E2E8F0;
+            --tag-bg: #EEF2FF;
+            --tag-text: #4338CA;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #818CF8;
+                --primary-hover: #6366F1;
+                --bg-color: #0F172A;
+                --card-bg: #1E293B;
+                --text-main: #F1F5F9;
+                --text-muted: #94A3B8;
+                --border-color: #334155;
+                --tag-bg: #312E81;
+                --tag-text: #E0E7FF;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 36px 28px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 28px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .meta {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        h2 {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-top: 28px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p {
+            font-size: 15px;
+            color: var(--text-main);
+            margin-bottom: 14px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 16px;
+        }
+
+        li {
+            font-size: 14px;
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 8px;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .highlight-box {
+            background-color: var(--tag-bg);
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 8px;
+            margin: 18px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-size: 14px;
+            color: var(--tag-text);
+            font-weight: 500;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+            word-break: break-all;
+        }
+
+        a:hover {
+            color: var(--primary-hover);
+        }
+
+        .footer {
+            margin-top: 36px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 13px;
+            color: var(--text-muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <span class="badge">Legal Document</span>
+        <h1>Privacy Policy</h1>
+        <p class="meta"><strong>Application:</strong> Momentum Habits &bull; <strong>Effective Date:</strong> October 19, 2026</p>
+    </div>
+
+    <div class="highlight-box">
+        <p><strong>Summary:</strong> Momentum Habits respects your privacy. Your personal habit routines, streaks, and progress records remain stored locally on your device in an offline SQLite database. We do not sell or collect your habit data.</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy explains how <strong>Momentum Habits</strong> ("the App", "we", "our", or "us") manages your data. By installing and using Momentum Habits, you agree to the collection and use of information in accordance with this policy.</p>
+
+    <h2>2. Information We Collect & Store</h2>
+    <p>The App is designed with an offline-first architecture to protect user privacy:</p>
+    <ul>
+        <li><strong>Habit & Streak Data:</strong> All habit names, targets, streaks, frequencies, and completion logs created by you are stored strictly locally on your device using Android's Room (SQLite) database. This data is never transferred to our own remote servers.</li>
+        <li><strong>App Preferences:</strong> Local settings, such as notification schedules and AdMob configuration choices, are saved in local device storage (SharedPreferences).</li>
+    </ul>
+
+    <h2>3. Third-Party Advertising (Google AdMob)</h2>
+    <p>To support the development and maintenance of Momentum Habits as a free application, we display advertisements provided by <strong>Google Mobile Ads (AdMob)</strong>.</p>
+    <p>Google AdMob may collect and process certain device information to deliver personalized or contextual ads. Such information may include:</p>
+    <ul>
+        <li>Google Advertising ID (AAID)</li>
+        <li>IP address and general location data (country/city level)</li>
+        <li>Device identifiers (model, operating system version, carrier)</li>
+        <li>Ad performance metrics and diagnostic crash reports</li>
+    </ul>
+    <p>For more details on how Google uses information from apps that use its services, please refer to Google's Privacy & Terms: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a> and Google's Privacy Policy at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>.</p>
+
+    <h2>4. Device Permissions We Request</h2>
+    <p>The App requests only permissions strictly necessary for its features:</p>
+    <ul>
+        <li><strong>POST_NOTIFICATIONS:</strong> Required on Android 13+ to send you daily habit reminder notifications.</li>
+        <li><strong>SCHEDULE_EXACT_ALARM & USE_EXACT_ALARM:</strong> Used to schedule precise reminder alarms so your reminders arrive on time.</li>
+        <li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Used solely by the Google Mobile Ads (AdMob) SDK to load advertisements.</li>
+        <li><strong>VIBRATE:</strong> Used for tactile feedback when reminders trigger.</li>
+    </ul>
+
+    <h2>5. Data Retention & User Deletion Rights</h2>
+    <p>You have full control over all data stored within the app:</p>
+    <ul>
+        <li>You can edit or delete individual habits at any time using the habit detail screen.</li>
+        <li>You can reset today's check-ins or delete all habits and history in one click via <strong>Profile &gt; Data Management &gt; Delete All Habits</strong>.</li>
+        <li>Uninstalling the app immediately deletes all locally stored habits and data from your device.</li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+    <p>Momentum Habits does not knowingly collect personally identifiable information from children under the age of 13. If you believe a child has provided us with personal information, please contact us so we can take appropriate action.</p>
+
+    <h2>7. Security</h2>
+    <p>We value your trust. Because your habit data is stored locally in the application's private sandboxed SQLite database on your device, it is not accessible to other standard applications on your device.</p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy periodically. We encourage you to review this page occasionally for any changes. Continued use of the App following any updates signifies acceptance of the revised policy.</p>
+
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or your data, please contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:nexovatelab@gmail.com">nexovatelab@gmail.com</a></p>
+
+    <div class="footer">
+        &copy; 2026 Momentum Habits. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
